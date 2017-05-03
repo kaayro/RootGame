@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.igitsoft.rootgame"
+        version     = "1.0.0"
+        versionCode = "1" >
+
+        <!-- versionCode is optional and Android only -->
+
+        <preference name="phonegap-version" value="cli-6.5.0" />
+		<preference name="orientation" value="portrait" />
+		<preference name="fullscreen" value="false" />
+		<preference name="android-build-tool" value="gradle" />
+
+        <name>Root</name>
+
+        <description>
+            Hackea los redes inalámbricas, dispositivos de extraños y mira sus conversaciones... Pede que te lleves una increíble sorpresa... 
+        </description>
+
+        <author href="http://igitweb.com/apps" email="info@igitweb.com">
+            iGitApps
+        </author>
+		<icon src="img/icon.png" />
+		
+		<platform name="android" />
+		
+		<gap:plugin name="cordova-plugin-admobpro" source="npm" />
+		<plugin name="cordova-plugin-whitelist" source="npm" />
+		
+		<allow-navigation href="http://*/*" />
+		<allow-navigation href="https://*/*" />
+		<allow-navigation href="data:*" />
+		
+		<access origin="*" />
+		
+    </widget>

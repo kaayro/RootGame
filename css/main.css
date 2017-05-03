@@ -1,0 +1,22 @@
+@font-face{font-family:'fuente';src:url('../fonts/Inconsolata-Regular.ttf');}
+
+*{font-family:'fuente';}
+body,html{margin:0;padding:0;width:100%;height:100vh;background-color:#333;color:#fff;box-sizing:border-box;}
+section.page{margin:0;padding:0;height:100%;display:flex;flex-direction:column;}
+section.page article{margin:0;padding:10px;flex:1;overflow-y:auto;}
+section.page article p{margin:0;padding:0;}
+section.page footer{margin:0;padding:0;}
+section.page footer a{margin:0;padding:10px;;display:block;text-align:center;text-decoration:none;border: solid 1px #1c6aa6;color:#1c6aa6;}
+
+div.dialog{margin:0;padding:0;position:absolute;top:-100%;left:0;background-color:#fff;color:#000;width:100%;box-sizing:border-box;}
+div.dialog h3{margin:0;padding:10px;text-align:center;border-bottom:solid 2px #1c6aa6;}
+div.dialog p{margin:0;padding:10px;text-align:center;}
+div.dialog a{margin:5px;padding:10px;text-align:center;display:block;text-decoration:none;border: solid 1px #1c6aa6;color:#1c6aa6;}
+
+span#pointer{animation-name:pointer;animation-duration:0.5s;animation-iteration-count: infinite;}
+@keyframes pointer {from{opacity:1;}to{opacity:0;}}
+
+div.dialog.active{animation-name:showDialog;animation-duration:0.5s;top:0;}
+@keyframes showDialog {from{top:-100%;}to{top:0;}}
+div.dialog.inactive{animation-name:hideDialog;animation-duration:0.8s;}
+@keyframes hideDialog {from{top:0;}to{top:-100%;}}
